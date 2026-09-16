@@ -7,7 +7,7 @@ int main() {
     int x1 = 0, y1 = 0; // Cas 1 : Tourne (regarde à gauche) puis avance de 5
     x1 -= 5; 
 
-    int x2 = 0, y2 = 0; // Cas 2 : Avance de 5 (vers le haut) puis tourne
+    int x2 = 0, y2 = 0; // Cas 2 : On avance de 5 vers le haut puis tourne
     y2 += 5;
 
     // 2. Création automatique du dossier exigé par l'énoncé
