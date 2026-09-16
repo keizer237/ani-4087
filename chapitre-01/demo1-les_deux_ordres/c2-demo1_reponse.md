@@ -1,14 +1,3 @@
-## Je tourne puis j'avance:
-L'objet effectue une rotation sur lui même, puis se déplace vers l'avant dans la nouvelles direction vers laquelle il pointe.
-
-# Resultats:
-l'objet est déplacer sur un axe incliner par rapport au point de depart.
-
-## J'avance puis je tourne:
-L'objet avance en ligne droite de sa direction initiale, puis une fois a sa nouvelle position effectue une rotation sur lui meme.
-
-# Resultats:
-L'objet se retrouve sur le même axe direct que le point de départ mais avec une orientation differente.
 
 
 ### Cas 1 : "Je tourne puis j'avance"
@@ -23,8 +12,8 @@ L'objet se retrouve sur le même axe direct que le point de départ mais avec un
 
 ## 2. Conclusion Mathématique
 
-L'orientation finale est identique (`Gauche`), mais les coordonnées finales sont complètement distinctes :
+L'orientation finale est identique (`Gauche`), mais les coordonnées bien distinct :
 - Cas 1 : `(-5, 0)` 
 - Cas 2 : `(0, 5)` 
-
+L'ordre des instructions change complètement le résultats final
 Cela prouve de façon définitive que les transformations géométriques (les matrices de rotation et de translation) ne sont **pas commutatives**.
