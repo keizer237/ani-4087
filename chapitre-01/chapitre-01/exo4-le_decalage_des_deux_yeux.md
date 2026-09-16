@@ -1,4 +1,4 @@
-# coome repere je me suis placer a 4m du mur et j'ai mesurer la distance entre mes deux oeils a environs 7.4cm - 7,5cm
+# comme repere je me suis placer a 4m du mur et j'ai mesurer la distance entre mes deux oeils a environs 7.4cm - 7,5cm
 
 # A 30cm le doigt semble se deplacer par rapport au mur du fond a environ 92,5 cm
 
