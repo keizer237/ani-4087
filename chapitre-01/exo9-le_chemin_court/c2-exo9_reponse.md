@@ -1,3 +1,48 @@
+#include <iostream>
+#include <cmath>
+
+struct Quaternion {
+    double x, y, z, w;
+};
+
+## Calcule de la vitesse angulaire moyenne
+double obtenirVitesse(Quaternion q1, Quaternion q2, double dt, bool avecForcage) {
+    # Calcul du produit scalaire (proximité entre les deux quaternions)
+    double dot = q1.x * q2.x + q1.y * q2.y + q1.z * q2.z + q1.w * q2.w;
+    
+    # Forçage du chemin court : si négatif, on inverse les signes
+    if (avecForcage && dot < 0.0) {
+        dot = -dot; 
+    }
+    
+    # Sécurité pour la fonction acos
+    if (dot > 1.0) dot = 1.0;
+    if (dot < -1.0) dot = -1.0;
+    
+    # Formule mathématique simplifiée de la vitesse angulaire
+    double angle = std::acos(dot);
+    return (2.0 * angle) / dt;
+}
+
+int main() {
+    Quaternion q1, q2;
+    double dt;
+
+    # Lecture des entrées de la console
+    std::cin >> q1.x >> q1.y >> q1.z >> q1.w;
+    std::cin >> q2.x >> q2.y >> q2.z >> q2.w;
+    std::cin >> dt;
+
+    # Calculs avec et sans forçage
+    double resAvec = obtenirVitesse(q1, q2, dt, true);
+    double resSans = obtenirVitesse(q1, q2, dt, false);
+
+    # Affichage des résultats
+    std::cout << resAvec << " " << resSans << std::endl;
+
+    return 0;
+}
+
 ### Exercice 9 : Le chemin court
 
 ### 1. Deux quaternions absurdes sans forçage
