@@ -4,16 +4,11 @@
 #include <cmath>
 
 int main() {
-    // 1. Simulation mathématique du problème
-    // Un delta minuscule positif (ex: 0.01 rad) sans le filtre du chemin court 
-    // correspond en fait à un tour presque complet à l'envers (-2PI + 0.01)
     double delta_minuscule = 0.01; 
     double angle_tour_envers = delta_minuscule - (2 * M_PI); 
-
-    // 2. Création automatique du dossier exact de la Démo 3
+    
     std::filesystem::create_directories("ani-4087/chapitre-01/demo03-le_tour_complet_a_l_envers");
 
-    // 3. Écriture directe des 3 lignes d'analyse demandées dans le rapport
     std::ofstream f("ani-4087/chapitre-01/demo03-le_tour_complet_a_l_envers/c1-demo3_reponse.md");
     
     if (f.is_open()) {
