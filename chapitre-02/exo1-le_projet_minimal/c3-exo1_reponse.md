@@ -1,0 +1,1 @@
+Nous avons une fonction main qui retourne juste 0
