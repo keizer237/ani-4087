@@ -13,9 +13,10 @@ with workspace("MaSalleWks", location="."):
         defines(["HELLO_WORLD"])
 
         # Configuration specifique pour android
-        with filter("System android"):
-            defines(["NK_PLATFORM_ANDROID"])
-            links(["android", "log", "egl", "GLESV3"])
+    with filter("system:Android"):
+        usetoolchain("android-ndk")
+        defines(["ANDROID"])
+        links(["EGL", "GLESv3", "android", "log"])
 
 # Projects actuels
     with project("MaSalle"):

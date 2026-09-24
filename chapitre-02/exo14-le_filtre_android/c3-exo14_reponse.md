@@ -46,6 +46,7 @@ Status: Not running
 ### 1. Constat avec la commande "jenga info"
 La commande `jenga info` ne permet pas de savoir si le filtre Android s'active ou non. Sa sortie textuelle reste strictement identique, que la condition du filtre soit évaluée à vraie ou à fausse, car elle se contente d'afficher la configuration générale du projet sans appliquer les filtres spécifiques à une plateforme cible non demandée.
 
-### 2. Méthode de vérification de l'activation du filtre
-Pour vérifier que le filtre s'active correctement pour Android, il faut exécuter la commande de build ou d'information en forçant la plateforme cible à l'aide de l'argument dédié :
-`jenga info --platform android` (ou `jenga build --platform android`).
+
+### Conclusion
+
+La commande `jenga info` ne permet pas de vérifier directement l'activation du filtre Android. En revanche, avec `jenga build --platform android-arm64`, Jenga utilise bien la toolchain `android-ndk` et le projet `MaSalle` est compilé avec succès pour Android ARM64
