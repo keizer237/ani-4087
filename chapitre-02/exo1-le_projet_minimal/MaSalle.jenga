@@ -12,6 +12,11 @@ with workspace("MaSalleWks", location="."):
         includedirs(["include", "dossier_qui_n_existe_pas"])
         defines(["HELLO_WORLD"])
 
+        # Configuration specifique pour android
+        with filter("System android"):
+            defines(["NK_PLATFORM_ANDROID"])
+            links(["android", "log", "egl", "GLESV3"])
+
 # Projects actuels
     with project("MaSalle"):
         consoleapp()
