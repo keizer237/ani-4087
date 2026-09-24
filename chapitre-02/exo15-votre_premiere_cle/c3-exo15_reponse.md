@@ -4,7 +4,7 @@
 Pour fabriquer la clé de signature de manière sécurisée avec l'algorithme RSA, la commande standard suivante a été exécutée (le mot de passe a été omis de la ligne de commande pour des raisons évidentes de sécurité) :
 
 ```bash
-keytool -genkeypair -v -keystore mon-moteur-xr.keystore -alias cle_signature_moteur -keyalg RSA -keysize 2048 -validity 10000
+jenga keygen --allias Salle-key --output monapp.keystore
 ```
 
 ### 2. Emplacement de stockage du mot de passe
