@@ -36,6 +36,8 @@ int main(){
     config.title = "Ma salle";
     config.width = 1280;
     config.height = 720;
+    config.resizable = false;
+
 
     nkentseu::NkWindow fenetre(config);
 
@@ -44,7 +46,7 @@ int main(){
     }
 
     while (fenetre.IsOpen()){
-        // nkentseu::NkEvents().PollEvents();
+        nkentseu::NkEvents().PollEvents();
     }
 
     return 0;
