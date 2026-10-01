@@ -1,10 +1,5 @@
 # Exercice 1 : La fenêtre nue
 
-## Énoncé
-
-> Écrivez le programme de quinze lignes de ce chapitre, construisez-le avec Jenga, et lancez-le.
->
-> Rendez le fichier `.jenga` et une capture de la fenêtre. Dites combien de temps cela vous a pris, honnêtement : ce nombre vous servira de référence pour mesurer vos progrès.
 
 ## Solution
 Pour réaliser cet exercice, j'ai créé le projet `MaFenetre` avec Jenga et utilisé le kit `KitNkentseu`. Les modules `NKWindow` et `NKEvent` ont été utilisés pour créer la fenêtre et gérer les événements.
