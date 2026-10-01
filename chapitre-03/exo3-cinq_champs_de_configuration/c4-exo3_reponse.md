@@ -51,4 +51,4 @@ float32 opacity = 0.5f;
 
 ## Conclusion
 
-Ces cinq tests m'ont permis de voir que les différents champs de `NkWindowConfig` permettent de modifier plusieurs caractéristiques de la fenêtre, comme sa position, sa taille et son apparence.
+Ces cinq tests m'ont permis de voir que les différents champs de `NkWindowConfig` permettent de modifier plusieurs caractéristiques de la fenêtre, mais il est egalement a note que certaine des commande ne fonctionne pas de mon cote le probleme n'ayant pas ete identifie.
