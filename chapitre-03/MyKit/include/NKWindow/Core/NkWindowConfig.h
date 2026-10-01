@@ -67,7 +67,7 @@ namespace nkentseu {
 	struct NkWindowConfig {
 			// --- Position et taille ---
 			int32 x = 100;
-			int32 y = 600;
+			int32 y = 200;
 			uint32 width = 1280;
 			uint32 height = 720;
 			uint32 minWidth = 160;
@@ -94,7 +94,7 @@ namespace nkentseu {
 			bool hasShadow = true;
 			bool transparent = false;
 			bool visible = true;
-			uint32 bgColor = 0xFF0000FF;  //0x141414FF;
+			uint32 bgColor = 0x141414FF;
 
 			// ── Fenêtre discrète (outils flottants type tableau de références) ──
 			// Ces trois réglages existent aussi à l'exécution (SetAlwaysOnTop,
@@ -103,7 +103,7 @@ namespace nkentseu {
 			// Support par plateforme : voir la doc des méthodes dans NkWindow.h.
 			bool alwaysOnTop = false;  ///< reste au-dessus des autres fenêtres
 			bool clickThrough = false; ///< transparente aux clics (la souris traverse)
-			float32 opacity = 0.5f;	   ///< opacité globale [0..1], 1 = opaque
+			float32 opacity = 1.0f;	   ///< opacité globale [0..1], 1 = opaque
 
 			// --- Identité ---
 			NkString title = "NkWindow";

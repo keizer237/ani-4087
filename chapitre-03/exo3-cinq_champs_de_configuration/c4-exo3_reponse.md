@@ -3,15 +3,15 @@
 ## Solution
 Pour cet exercice, j'ai choisi cinq champs différents de `NkWindowConfig` qui se trouve dans `KitNkentseu\include\NKWindow\Core` afin d'observer leur influence sur la fenêtre. J'ai testé chaque champ séparément.
 
-### 1. Redimensionnement : `resizable`
+### 1. rendre invisible la fenetre : `invisible`
 
 ```cpp
-bool resizable = true;
+bool visible = false;
 ```
 
-* Je m'attends à ce que la taille de la fenêtre ne puisse plus être modifiée manuellement. *
+* Je m'attends à ce que la fenetre ne se vois plus *
 
-**Observé :** Je ne pouvais plus redimensionner la fenêtre avec la souris. Sa taille restait fixe même en essayant de déplacer ses bordures.
+**Observé :** je me suis rendu compte qu'apres le build et le jenga run, la fenetre n'etait pas visible alors que l'executable etait ouvert. **
 
 
 ### 2. Position horizontale : `x`
@@ -47,7 +47,7 @@ uint32 bgColor = 0xFF0000FF;
 float32 opacity = 0.5f;
 ```
 * je m'attend a ce que la fenetre soit plus transparente. *
-**Observation :** La fenêtre est devenue plus transparente qu'avant. On pouvait voir en partie ce qui se trouvait derrière la fenêtre c'est à dire mon editeur de code.
+**Observation :** Rien ne sais produit apres modification du champ la cause je n'est pas pu la determinee **
 
 ## Conclusion
 
