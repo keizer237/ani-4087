@@ -89,7 +89,14 @@ int main(){
                 running = false;
             }
         });
-        
+
+    // Rappel appelé à chaque changement de taille de la fenêtre
+    nkentseu::NkEvents().AddEventCallback<nkentseu::NkWindowResizeEvent>(
+        [](nkentseu::NkWindowResizeEvent* event){
+            std::cout << "Nouvelle taille : "
+                      << event->GetWidth() << " x "
+                      << event->GetHeight() << std::endl;
+        });
 
     while (running){
         nkentseu::NkEvents().PollEvents();
