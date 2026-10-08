@@ -1,0 +1,8 @@
+PS C:\Users\Bouetou\ani-4087\chapitre-04\exo2-un_cube_et_rien_d_autre> Get-Content exo2.txt | ./main2
+blanc VISIBLE
+ombre RENDER3D ETEINT
+plat ECHELLE NULLE
+mur CAMERA DANS LE CUBE
+noir PAS DE LUMIERE
+VISIBLES 1
+EN PANNE 4

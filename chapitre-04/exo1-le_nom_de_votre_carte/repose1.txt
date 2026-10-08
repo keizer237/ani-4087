@@ -1,0 +1,9 @@
+PS C:\Users\Bouetou\ani-4087\chapitre-04\exo1-le_nom_de_votre_carte> Get-Content exo1.txt | ./main1
+bureau Vulkan
+portable DirectX 11
+mac Metal
+serveur Software
+telephone Vulkan
+IGNOREES 1
+LOGICIEL 1
+DIFFERENTES 4
