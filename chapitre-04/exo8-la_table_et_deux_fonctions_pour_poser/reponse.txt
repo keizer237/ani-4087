@@ -1,0 +1,23 @@
+## reponse
+
+Lignes avant les fonctions : 58 lignes. Dans ma salle, chaque objet posé au sol ou sur la table avait son propre calcul de hauteur écrit 
+directement dans le programme.
+
+Lignes apres : 52 lignes. Le calcul est écrit une seule fois dans PoserAuSol et une seule fois dans PoserSurTable, et chaque objet fait juste un 
+appel. J'ai gagné 6 lignes.
+
+L'erreur que la fonction m'evite : elle m'évite de refaire le calcul de la hauteur du centre à chaque fois. Pour un objet posé au sol, le centre 
+est à sy / 2, et pour un objet posé sur la table, il est à H + sy / 2. Une erreur dans ces calculs pourrait donc mal positionner plusieurs objets.
+
+
+
+PS C:\Users\Bouetou\ani-4087\chapitre-04\exo8-la_table_et_deux_fonctions_pour_poser> Get-Content resultat.txt | ./poser           
+PLATEAU 600 720 700
+PIED 60 345 360
+PIED 1140 345 360
+PIED 60 345 1040
+PIED 1140 345 1040
+tabouret -1200 225 900
+repere -1100 500 1200
+lampe 400 950 600
+livre 800 770 800

@@ -1,0 +1,8 @@
+PS C:\Users\Bouetou\ani-4087\chapitre-04\exo6-la_porte_et_les_fenetres> Get-Content exo6.txt | ./main6         
+porte 40 OK
+fenetre 40 OK
+colle 1 CLIGNOTE
+haute 40 DEBORDE
+flottante 310 DECOLLE
+OK 2
+A REPRENDRE 3

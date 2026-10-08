@@ -1,0 +1,20 @@
+Mes deux medianes : La médiane de la configuration ALL est de 904 ms et celle de la configuration RENDER3D | SHADOW est de 614 ms. L'écart entre 
+les deux médianes est donc de 290 ms.
+
+L'ecart est-il significatif : Oui, l'écart de 290 ms entre les deux médianes est important par rapport aux variations observées dans les mesures.
+La configuration RENDER3D | SHADOW démarre donc nettement plus rapidement que la configuration ALL.
+
+Pourquoi la mediane et pas la moyenne : La médiane est préférable car le premier démarrage peut être beaucoup plus lent à cause du chargement 
+initial depuis le disque. Une valeur exceptionnellement élevée influence fortement la moyenne, alors que la médiane est moins sensible aux 
+valeurs extrêmes et représente mieux le temps de démarrage habituel.
+
+
+PS C:\Users\Bouetou\ani-4087\chapitre-04\exo9-le_budget_des_sous_systemes> Get-Content entree.txt | ./budget
+tout VALEUR 4294967295
+tout MEDIANE 904
+tout MOYENNE 1053
+salle VALEUR 18
+salle MEDIANE 614
+salle MOYENNE 715
+ECART MEDIANES 290
+ECART MOYENNES 338
