@@ -1,0 +1,12 @@
+Ma texture : c'est une photo d'un mur peint en beige clair, assez lisse, avec quelques petites taches et des zones plus claires ou plus 
+sombres selon la lumière. Elle fait 1280 x 720 pixels, comme le dit le journal du moteur (Texture chargee : murs/mur.jpeg (1280x720 sRGB)). 
+Je l'ai mise dans le dossier murs/ sous le nom mur.jpeg.
+
+Ce que le mur a gagne : avant, le mur du fond était un aplat gris, pareil que les autres : on voit qu'il est là, mais on ne sait pas à 
+quelle distance il est. Avec la photo, on voit des taches, des variations de couleur et de lumière sur la surface. Ces détails donnent 
+une idée de la distance, et le mur ne ressemble plus aux trois autres.
+
+Ce qui m'a bloque : la construction du programme. Le jenga installé à part prenait un compilateur qui ne se lie pas avec le kit R3D 
+(libc++ d'un côté, libstdc++ de l'autre), et la construction était refusée. J'ai dû construire avec le jenga de NKCode. Ensuite, le nom 
+de mon projet dans le fichier .jenga change le chemin de l'exécutable, et je dois lancer le programme depuis le dossier de l'exercice, sinon 
+le chemin murs/mur.jpeg ne trouve pas la photo.
