@@ -1,0 +1,7 @@
+Mon format pour un mur : le PNG.
+
+Pourquoi : sur ma photo de mur (1280 x 720), le PNG pèse 87 401 octets. Le BMP pèse 2 764 854 octets, donc le PNG est environ 32 fois plus petit et il ne perd rien. Le QOI ne perd rien non plus, mais il pèse 268 662 octets, soit environ 3 fois plus que le PNG. Le JPEG est le plus petit (23 133 octets), mais c'est un format avec perte. Pour une texture de mur qu'on regarde de près dans un casque, je préfère garder tous les détails, donc je choisis le PNG.
+
+Ce que le JPEG fait perdre : il change un peu les couleurs et efface des petits détails pour gagner de la place, et on ne peut pas les récupérer ensuite. À chaque nouvel enregistrement en JPEG, on perd encore un peu. Sur un mur lisse, cela peut faire apparaître des petits carrés ou des bandes de couleur quand on regarde de près.
+
+Ce qui m'a surpris : le TGA s'est bien écrit (2 764 844 octets), mais le moteur n'a pas réussi à le relire : il est illisible. Un fichier écrit n'est donc pas forcément un fichier qu'on peut relire. J'ai aussi été surpris que le BMP et le TGA fassent presque 3 Mo alors que le PNG de la même image fait 87 Ko.
