@@ -1,0 +1,8 @@
+Pourquoi cette direction : avec avant = -Z, haut = +Y et un repère de main droite, un lacet positif de 90 degrés tourne l'avant vers -X ; l'attendu 
+écrit en dur est donc (-1, 0, 0).
+
+L'épreuve qui sait dire non : l'épreuve « lacet -90, tangage 0 » attend (+1, 0, 0). Si le signe du lacet est inversé dans Regard(), elle échoue 
+au lieu de reproduire automatiquement la même formule dans l'attendu.
+
+Ce que la souris ne permettait pas : ce test pose directement le lacet, le tangage et la position, et valide la direction sans déplacer la souris 
+ni ouvrir de fenêtre. Il peut être relancé automatiquement et rend son verdict par le code de sortie.

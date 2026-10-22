@@ -1,0 +1,10 @@
+Ce que fait le monde : dans l'ordre lacet*tangage, le regard reste à 30 degrés au-dessus de l'horizon lorsque le lacet passe de 0 à 180 degrés. 
+Dans l'ordre tangage*lacet, sa hauteur baisse de 30 degrés à -30 degrés : le monde semble se pencher au cours du tour. Cette conclusion doit être 
+confirmée avec les dix lignes imprimées et les captures du moteur.
+
+Autour de quel axe : dans l'ordre correct, l'élévation constante de 30 degrés fait tourner le regard sur un cône autour de l'axe vertical Y. 
+Dans l'ordre tangage*lacet, la hauteur varie avec le lacet ; le tangage agit autour de l'axe X du monde au lieu de rester attaché à l'axe droit 
+de la tête.
+
+L'ordre fautif : le produit tangage*lacet applique le lacet puis le tangage autour de l'axe X fixe. Le produit lacet*tangage applique d'abord le 
+tangage à la tête puis fait tourner cette tête inclinée autour de l'axe vertical ; il conserve donc l'angle de regard.

@@ -1,0 +1,5 @@
+﻿L'ordre que rejoint la matrice : Le calcul par matrices rejoint l'ordre lacet*tangage. Les deux regards obtenus sont identiques : (-0.6124, 0.5000, -0.6124).
+
+L'ordre d'une tête : Le tangage incline le regard autour de l'axe droit de la tête, puis le lacet fait tourner cette tête inclinée autour de l'axe vertical. Cet ordre conserve l'élévation du regard lorsque la tête pivote.
+
+Comment je l'ai vérifié : Pour un tangage de 30 degrés, la composante verticale attendue vaut sin(30°) = 0.5. Elle correspond aux résultats lacet*tangage et matrices, qui donnent y = 0.5000. L'ordre tangage*lacet donne y = 0.3536 et ne correspond donc pas au même regard.

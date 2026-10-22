@@ -1,0 +1,5 @@
+﻿t = 6.0 s, lu = -1.1, vide = -2.5, sans vidage = -180.3
+t = 7.1 s, lu = -1.1, vide = -2.5, sans vidage = -334.0
+t = 8.1 s, lu = -1.1, vide = -2.5, sans vidage = -487.8
+t = 9.1 s, lu = -1.1, vide = -2.5, sans vidage = -639.1
+t = 10.1 s, lu = -1.1, vide = -2.5, sans vidage = -790.3

@@ -1,0 +1,15 @@
+Ma sensibilité :
+La sensibilité utilisée est celle définie dans le code du programme. Si la constante est bien 0.002, elle doit être exprimée selon l’unité utilisée 
+par le calcul du lacet.
+
+Vitesse de dérive :
+La vitesse moyenne mesurée est d’environ -3,3 degrés par seconde.
+
+D’où vient ce chiffre :
+J’ai calculé la variation du lacet entre deux mesures séparées de 5 secondes, alors que la valeur brute affichée était nulle :
+(-24,9 - (-8,4)) / (22,2 - 17,2) = -3,3 degrés par seconde.
+
+Pourquoi elle ne s’arrête pas :
+Les mesures montrent que le lacet peut continuer à changer alors que brut vaut zéro. Cela indique que la variation de l’angle ne dépend pas uniquement 
+de la valeur brute affichée à cet instant. Il faut examiner le calcul de l’angle dans le code pour déterminer si cela provient d’une inertie, d’un 
+lissage ou d’une autre mise à jour de l’orientation.

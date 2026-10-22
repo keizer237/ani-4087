@@ -1,0 +1,14 @@
+Avec CaptureMouse seul : Lorsque je déplace la souris dans la fenêtre, le curseur est invisible. Lorsque je déplace la souris en dehors de la 
+fenêtre, il redevient visible et se déplace sur le bureau. Cela montre que CaptureMouse(true) capture la souris, mais ne suffit pas à empêcher 
+le curseur de sortir de la fenêtre.
+
+Ce qui le retient : Lorsque ClipMouseToClient(true) est activé, le curseur reste dans la zone de la fenêtre lorsque je le pousse vers ses bords. 
+Cet appel demande au système de confiner le curseur dans la zone client de la fenêtre. Il empêche ainsi le pointeur de sortir de cette zone.
+
+Deux appuis de suite : Après deux appuis successifs sur Tab, le curseur reste invisible. Lorsque j'appuie une fois sur Échap, il redevient visible. 
+Cela s'explique par le fonctionnement de ShowMouse : sous Windows, la visibilité du curseur repose sur un compteur et non sur un simple booléen. 
+Le programme doit équilibrer les appels qui cachent le curseur par des appels qui le rendent visible.
+
+Fermeture sans relâcher : Lorsque je reprends la souris avec Tab, puis ferme la fenêtre avec sa croix sans appuyer sur Échap, le curseur redevient 
+visible sur le bureau. Cela s'explique par l'appel à AvantFermeture(), qui libère la capture, retire le confinement et rétablit la visibilité du curseur 
+avant la fin du programme.

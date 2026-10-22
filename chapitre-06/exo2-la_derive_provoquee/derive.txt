@@ -1,0 +1,7 @@
+
+t = 17.2 s, images = 1031, brut = 0, lacet = -8.4 deg
+t = 18.2 s, images = 1092, brut = 0, lacet = -12.7 deg
+t = 19.2 s, images = 1152, brut = 0, lacet = -12.7 deg
+t = 20.2 s, images = 1213, brut = 0, lacet = -24.9 deg
+t = 21.2 s, images = 1274, brut = 0, lacet = -24.9 deg
+t = 22.2 s, images = 1335, brut = 0, lacet = -24.9 deg

@@ -1,0 +1,15 @@
+﻿Lecture du module :
+La version « lu » lit directement le déplacement brut fourni par le module d’entrées à chaque image. Pendant les relevés après l’arrêt de la souris, le 
+lacet reste à -1,1 degré.
+
+Accumulé et vidé :
+La version « vide » additionne les événements bruts reçus, lit la somme une fois par image puis remet l’accumulateur à zéro. Dans mes relevés 
+après l’arrêt, le lacet reste à -2,5 degrés.
+
+Accumulé sans vidage :
+La version « sans vidage » accumule les événements sans remettre la somme à zéro. Elle réutilise donc les anciens déplacements à chaque image. 
+Entre 6,0 s et 10,1 s, sa valeur passe de -180,3 à -790,3 degrés alors que les deux autres valeurs restent stables.
+
+Ce que fait le vidage :
+Le vidage remet l’accumulateur à zéro après sa lecture. Il évite ainsi de réappliquer à chaque image les déplacements déjà traités. Sans cette 
+remise à zéro, le lacet continue de dériver même lorsque la souris est immobile.
