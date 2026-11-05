@@ -1,0 +1,17 @@
+La relation :
+
+Chaque emprunt réussi doit être suivi d'une libération. La relation attendue est REUSSIES = LIBERATIONS lorsque toutes les images 
+empruntées sont correctement rendues. Si une image reste empruntée, les emprunts suivants sont refusés et la chaîne finit par se bloquer. 
+L'écart correspond à REUSSIES - LIBERATIONS.
+
+Mes trois nombres :
+
+Pour l'entrée de simulation, les résultats sont 5 emprunts réussis, 6 emprunts refusés et 4 libérations. L'écart est donc de 1. 
+Ces valeurs correspondent à la simulation fournie et non à une mesure réelle d'une minute de ma propre boucle de rendu. Pour compléter 
+cette partie, il faut instrumenter sa propre boucle et relever les trois compteurs pendant une minute.
+
+Le chemin qui fuit :
+
+Le chemin qui fuit est celui où le programme réussit AcquireImage puis quitte la fonction ou la boucle avant d'appeler ReleaseImage. 
+L'image reste empruntée. Lors de la trame suivante, AcquireImage est refusé. Il faut donc garantir un appel à ReleaseImage sur tous 
+les chemins de sortie après un emprunt réussi.

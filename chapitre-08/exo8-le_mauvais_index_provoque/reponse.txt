@@ -1,0 +1,22 @@
+Images paires et impaires :
+
+Les trames impaires affichent les positions 10, 20, 50 et 70 mm. Les trames paires affichent les positions précédentes : 10, 20, 50 et 
+70 mm. On remarque que les images paires répètent les images précédentes. Les sauts alternent entre 0, 10, 0, 30, 0 et 20 mm. 
+Cela provoque un tremblement, car le saut minimum est 0 et le maximum est 30.
+
+Avec une seule image :
+
+Avec n = 1, toutes les trames utilisent le même emplacement. Les modes A, P et D désignent donc toujours la même image. La sortie est :
+
+1 10 
+2 20 10
+3 30 10
+4 40 10
+5 50 10
+6 60 10
+7 70 10
+8 80 10
+SAUT MIN 10
+SAUT MAX 10
+TREMBLE NON
+
